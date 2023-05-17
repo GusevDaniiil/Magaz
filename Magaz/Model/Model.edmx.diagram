@@ -4,14 +4,19 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="010e3e73f1114445849481842908563c" Name="Diagram1">
-        <EntityTypeShape EntityType="AvtozaptModel.Users" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="AvtozaptModel.Akk" Width="1.5" PointX="3.75" PointY="0.75" />
-        <EntityTypeShape EntityType="AvtozaptModel.Din" Width="1.5" PointX="0.75" PointY="3.75" />
-        <EntityTypeShape EntityType="AvtozaptModel.Mag" Width="1.5" PointX="2.75" PointY="3.75" />
-        <EntityTypeShape EntityType="AvtozaptModel.Sab" Width="1.5" PointX="4.75" PointY="3.75" />
-        <EntityTypeShape EntityType="AvtozaptModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="0.75" />
-        <EntityTypeShape EntityType="AvtozaptModel.Zy" Width="1.5" PointX="0.75" PointY="6.75" />
+      <Diagram DiagramId="d26c953f691d40e581a26b7fb1a496ad" Name="Diagram1">
+        <EntityTypeShape EntityType="AvtozaptModel.Akk" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AvtozaptModel.Din" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AvtozaptModel.Mag" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AvtozaptModel.Sab" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AvtozaptModel.Users" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AvtozaptModel.Zy" Width="1.5" PointX="4.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AvtozaptModel.Antf" Width="1.5" PointX="0.75" PointY="6.75" />
+        <EntityTypeShape EntityType="AvtozaptModel.Mmas" Width="1.5" PointX="2.75" PointY="6.75" />
+        <EntityTypeShape EntityType="AvtozaptModel.Navig" Width="1.5" PointX="4.75" PointY="6.75" />
+        <EntityTypeShape EntityType="AvtozaptModel.Scys" Width="1.5" PointX="6.75" PointY="6.75" />
+        <EntityTypeShape EntityType="AvtozaptModel.Ssal" Width="1.5" PointX="7.75" PointY="0.75" />
+        <EntityTypeShape EntityType="AvtozaptModel.Tmas" Width="1.5" PointX="7.75" PointY="3.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

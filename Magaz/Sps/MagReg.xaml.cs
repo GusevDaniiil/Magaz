@@ -1,4 +1,4 @@
-﻿using Magaz.Sps;
+﻿using Magaz.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,26 +14,21 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Magaz.Progs
+namespace Magaz.Sps
 {
     /// <summary>
-    /// Логика взаимодействия для EltPage.xaml
+    /// Логика взаимодействия для MagReg.xaml
     /// </summary>
-    public partial class EltPage : Page
+    public partial class MagReg : Page
     {
-        public EltPage()
+        public MagReg()
         {
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Page_Loaded(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new ZvcPage());
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new VidReg());
+            MagGrid.ItemsSource = AppData.db.Mag.ToList();
         }
     }
 }

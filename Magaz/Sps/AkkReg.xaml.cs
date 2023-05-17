@@ -1,4 +1,4 @@
-﻿using Magaz.Sps;
+﻿using Magaz.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,26 +14,21 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Magaz.Progs
+namespace Magaz.Sps
 {
     /// <summary>
-    /// Логика взаимодействия для EltPage.xaml
+    /// Логика взаимодействия для AkkReg.xaml
     /// </summary>
-    public partial class EltPage : Page
+    public partial class AkkReg : Page
     {
-        public EltPage()
+        public AkkReg()
         {
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Page_Loaded(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new ZvcPage());
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new VidReg());
+            AkkGrid.ItemsSource = AppData.db.Akk.ToList();
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Magaz.Sps;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,7 +28,7 @@ namespace Magaz.Progs
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            NavigationService.Navigate(new AkkReg());
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
@@ -37,7 +38,7 @@ namespace Magaz.Progs
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-
+            NavigationService.Navigate(new SvtReg());
         }
     }
 }

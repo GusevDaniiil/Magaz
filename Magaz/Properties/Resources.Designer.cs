@@ -63,9 +63,9 @@ namespace Magaz.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Лого {
+        internal static System.Drawing.Bitmap Log {
             get {
-                object obj = ResourceManager.GetObject("Лого", resourceCulture);
+                object obj = ResourceManager.GetObject("Log", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
