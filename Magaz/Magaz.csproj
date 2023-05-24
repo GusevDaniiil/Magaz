@@ -91,6 +91,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Dob\MmsPage.xaml.cs">
+      <DependentUpon>MmsPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Model\Antf.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
@@ -108,6 +111,9 @@
     </Compile>
     <Compile Include="Model\Tmas.cs">
       <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Progs\PoslPage.xaml.cs">
+      <DependentUpon>PoslPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Sps\AkkReg.xaml.cs">
       <DependentUpon>AkkReg.xaml</DependentUpon>
@@ -127,6 +133,12 @@
     <Compile Include="Sps\MmsReg.xaml.cs">
       <DependentUpon>MmsReg.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Sps\ScusReg.xaml.cs">
+      <DependentUpon>ScusReg.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Sps\SsalReg.xaml.cs">
+      <DependentUpon>SsalReg.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Sps\SvtReg.xaml.cs">
       <DependentUpon>SvtReg.xaml</DependentUpon>
     </Compile>
@@ -136,6 +148,10 @@
     <Compile Include="Sps\VidReg.xaml.cs">
       <DependentUpon>VidReg.xaml</DependentUpon>
     </Compile>
+    <Page Include="Dob\MmsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -172,6 +188,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Progs\PoslPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Progs\RegPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -205,6 +225,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Sps\MmsReg.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Sps\ScusReg.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Sps\SsalReg.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

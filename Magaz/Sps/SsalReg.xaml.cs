@@ -1,6 +1,4 @@
-﻿using Magaz.Dob;
-using Magaz.Model;
-using Magaz.Progs;
+﻿using Magaz.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,23 +17,18 @@ using System.Windows.Shapes;
 namespace Magaz.Sps
 {
     /// <summary>
-    /// Логика взаимодействия для MmsReg.xaml
+    /// Логика взаимодействия для SsalReg.xaml
     /// </summary>
-    public partial class MmsReg : Page
+    public partial class SsalReg : Page
     {
-        public MmsReg()
+        public SsalReg()
         {
             InitializeComponent();
         }
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
-            MmsGrid.ItemsSource = AppData.db.Mmas.ToList();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new MmsPage());
+            SsalGrid.ItemsSource = AppData.db.Ssal.ToList();
         }
     }
 }

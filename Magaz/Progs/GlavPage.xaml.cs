@@ -37,5 +37,10 @@ namespace Magaz.Progs
                 MessageBox.Show("Данного пользователя нет в базе");
             }
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new PoslPage());
+        }
     }
 }

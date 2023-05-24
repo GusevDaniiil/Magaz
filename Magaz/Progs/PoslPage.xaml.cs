@@ -1,4 +1,4 @@
-﻿using Magaz.Sps;
+﻿using Magaz.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,27 +17,28 @@ using System.Windows.Shapes;
 namespace Magaz.Progs
 {
     /// <summary>
-    /// Логика взаимодействия для HimPage.xaml
+    /// Логика взаимодействия для PoslPage.xaml
     /// </summary>
-    public partial class HimPage : Page
+    public partial class PoslPage : Page
     {
-        public HimPage()
+        public PoslPage()
         {
             InitializeComponent();
+            
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new ScusReg());
-        }
+            Users people = new Users();
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new SsalReg());
-        }
+            people.Login = textBoxLogin.Text;
+            people.Password = textBoxPassword.Text;
+            people.Email = textBoxEmail.Text;
 
-        private void Button_Click_2(object sender, RoutedEventArgs e)
-        {
+            AppData.db.Users.Add(people);
+            AppData.db.SaveChanges();
+            MessageBox.Show("Пользователь добавлен в базу");
+            NavigationService.GoBack();
 
         }
     }
